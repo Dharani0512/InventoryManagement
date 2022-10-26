@@ -1,4 +1,4 @@
-# HRMS
+# HRMS with Inventory Management
 
 #### Track Your Job Search
 
