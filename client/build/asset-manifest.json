@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "./static/css/main.58b8f8e5.css",
+    "main.js": "./static/js/main.2dcfd4be.js",
+    "static/media/node-js.pdf": "./static/media/node-js.78272714a8fa62b3bb3a.pdf",
+    "static/media/hero.jpg": "./static/media/hero.15e5f60eb95486007f5a.jpg",
+    "static/media/logo.svg": "./static/media/logo.5ca8d9b78eca6fe1a5575ad755dbdc9b.svg",
+    "static/media/vim meme.jpg": "./static/media/vim meme.30303be9c88f643fa2b2.jpg",
+    "static/media/sagaLogo.png": "./static/media/sagaLogo.28bff33fec50fb7332cf.png",
+    "static/media/m.2ssd.jpg": "./static/media/m.2ssd.8ab9fe7ccd3987d806e4.jpg",
+    "static/media/not-found.svg": "./static/media/not-found.5eb3e64476624b8a49d7d75cc64a0d40.svg",
+    "static/media/unauthorized.svg": "./static/media/unauthorized.a2815a964690df514b612429963ba949.svg",
+    "static/media/Report for 2022-1.pdf": "./static/media/Report for 2022-1.d076b927154bb916b0ca.pdf",
+    "index.html": "./index.html",
+    "main.58b8f8e5.css.map": "./static/css/main.58b8f8e5.css.map",
+    "main.2dcfd4be.js.map": "./static/js/main.2dcfd4be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58b8f8e5.css",
+    "static/js/main.2dcfd4be.js"
+  ]
+}

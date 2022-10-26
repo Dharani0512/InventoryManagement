@@ -1,0 +1,362 @@
+import { StatusCodes } from "http-status-codes";
+import {
+  BadRequestError,
+  UnAuthenticatedError,
+  NotFoundError,
+} from "../errors/index.js";
+import User from "../models/User.js";
+import crypto from "crypto";
+import sendResetPasswordEmail from "../utils/sendresetpasswordemail.js";
+import createHash from "../utils/createHash.js";
+import mongoose from "mongoose";
+
+const register = async (req, res, next) => {
+  const { name, email, password, employeeId, role, state, adminId, empId } =
+    req.body;
+
+  const oldAdminId = await User.findOne({
+    role: "Admin",
+  });
+  console.log(oldAdminId);
+
+  const stateAdminId = await User.findOne({
+    role: "stateAdmin",
+    state: state,
+  });
+  console.log("state", typeof stateAdminId, stateAdminId);
+
+  if (!employeeId) {
+    throw new BadRequestError("Please provide employee id");
+  }
+
+  const userAlreadyExist = await User.findOne({ employeeId });
+  if (userAlreadyExist) {
+    throw new BadRequestError("This Employee Id  is already in use ");
+  }
+  const emailAlreadyUsed = await User.findOne({ email });
+  if (emailAlreadyUsed) {
+    throw new BadRequestError("This Email Id is already in use Try another");
+  }
+  // const isFirstUser = (await User.countDocuments({})) <= 0;
+  // const role = isFirstUser ? "admin" : "employee";
+  // const role = "";
+
+  const verificationToken = crypto.randomBytes(40).toString("hex");
+
+  req.body.verificationToken = verificationToken;
+  // const myObjectId = ObjectId();
+
+  // req.body.adminId =
+  //   role === "Employee" ? null : adminId ? adminId : mongoose.Types.ObjectId();
+
+  // req.body.empId =
+  //   role === "Employee" ? null : empId ? adminId : mongoose.Types.ObjectId();
+
+  //admin
+
+  if (role === "Admin") {
+    req.body.adminId =
+      role === "Admin" ? oldAdminId.adminId : mongoose.Types.ObjectId();
+    req.body.empId =
+      role === "Admin" ? oldAdminId.empId : mongoose.Types.ObjectId();
+    // return req.body.adminId, req.body.empId
+  } else if (role === "stateAdmin") {
+    //stateAdmin
+    if (stateAdminId !== null) {
+      req.body.adminId =
+        role === "stateAdmin" && state === stateAdminId.state
+          ? oldAdminId.empId
+          : oldAdminId.empId;
+      req.body.empId =
+        role === "stateAdmin" && state === stateAdminId.state
+          ? stateAdminId.empId
+          : mongoose.Types.ObjectId();
+    } else if (stateAdminId === null) {
+      req.body.adminId =
+        role === "stateAdmin" ? oldAdminId.empId : oldAdminId.empId;
+      req.body.empId =
+        role === "stateAdmin" ? mongoose.Types.ObjectId() : false;
+    }
+    // console.log(req.body.adminId, req.body.empId);
+  } else if (role === "Employee") {
+    //employee
+    req.body.adminId =
+      role === "Employee" && state === stateAdminId.state
+        ? oldAdminId.empId
+        : null;
+    req.body.empId =
+      role === "Employee" && state === stateAdminId.state
+        ? stateAdminId.empId
+        : null;
+  }
+  const user = await User.create(req.body);
+
+  const token = user.createJWT();
+  console.log({ user });
+  res.status(StatusCodes.CREATED).json({
+    user: {
+      email: user.email,
+      // lastName: user.lastName,
+      employeeId: user.employeeId,
+      role: user.role,
+      location: user.location,
+      name: user.name,
+    },
+    token,
+    verificationToken: user.verificationToken,
+  });
+};
+const login = async (req, res) => {
+  const { email, employeeId, password } = req.body;
+  const firstAdmin = await User.find({});
+  console.log(firstAdmin.length);
+
+  if (firstAdmin.length === 0) {
+    req.body.role = "Admin";
+    req.body.email = email;
+    req.body.state = "";
+    req.body.password = password;
+    req.body.name = "Admin";
+
+    req.body.adminId = mongoose.Types.ObjectId();
+    req.body.empId = mongoose.Types.ObjectId();
+
+    const user = await User.create(req.body);
+    const token = user.createJWT();
+
+    res.status(StatusCodes.CREATED).json({
+      user: {
+        email: user.email,
+        // lastName: user.lastName,
+        employeeId: user.employeeId,
+        role: user.role,
+        location: user.location,
+        name: user.name,
+      },
+      token,
+    });
+  }
+  const user = await User.findOne({ email });
+  if (user.role === "Employee") {
+    const EmployeeUser = await User.findOne({ employeeId, email }).select(
+      "+password"
+    );
+    if (!EmployeeUser) {
+      throw new UnAuthenticatedError("Employee Id or Email Id  does not match");
+    }
+    const isPasswordCorrect = await EmployeeUser.comparePassword(password);
+    if (!isPasswordCorrect) {
+      throw new UnAuthenticatedError("password is worng");
+    }
+  } else if (user.role === "stateAdmin") {
+    const stateAdmin = await User.findOne({ employeeId, email }).select(
+      "+password"
+    );
+    if (!stateAdmin) {
+      throw new UnAuthenticatedError("Employee Id or Email Id does not match");
+    }
+    const isPasswordCorrect = await stateAdmin.comparePassword(password);
+    if (!isPasswordCorrect) {
+      throw new UnAuthenticatedError("passoword is wrong");
+    }
+  } else {
+    const adminUser = await User.findOne({ email }).select("+password");
+    if (!adminUser) {
+      throw new UnAuthenticatedError(`Email id doesn't match`);
+    }
+    const isPasswordCorrect = await adminUser.comparePassword(password);
+    if (!isPasswordCorrect) {
+      throw new UnAuthenticatedError("password is worng");
+    }
+  }
+
+  const token = user.createJWT();
+  user.password = undefined;
+  res.status(StatusCodes.OK).json({ user, token });
+  // res.send("login");
+};
+
+//verify email
+
+const verifyEmail = async (req, res) => {
+  const { verificationToken, email } = req.body;
+  const user = await User.findOne({ email });
+  console.log(user);
+  if (!user) {
+    //!user
+    throw new UnAuthenticatedError("Verification Failed");
+  }
+
+  if (user.verificationToken !== verificationToken) {
+    // !user.verificationToken !== verificationToken
+    throw new UnAuthenticatedError("Verification Email Failed ");
+  }
+
+  (user.isVerified = true), (user.verified = Date.now());
+  user.verificationToken = "";
+
+  await user.save();
+
+  res.status(StatusCodes.OK).json({ msg: "Email Verified" });
+};
+
+//updateUser
+const updateUser = async (req, res) => {
+  const { email, name, employeeId } = req.body;
+
+  const user = await User.findOne({ _id: req.user.userId });
+  user.email = email;
+  user.employeeId = employeeId;
+  user.name = name;
+  await user.save();
+  const token = user.createJWT();
+  res.status(StatusCodes.OK).json({
+    user,
+    token,
+  });
+};
+
+const getAllUser = async (req, res) => {
+  console.log(req);
+
+  const roleId = req.emp.empId; //_id
+  const gotRole = await User.findById({ _id: roleId });
+  console.log("gotRole", gotRole, req.body);
+  const empId = gotRole.empId;
+  console.log("ID... ", empId, gotRole.empId);
+  const access = (gotRole, empId) => {
+    let queryObject = {};
+    if (gotRole.role == "Admin") {
+      let getAdm = { adminId: empId };
+
+      // let result = salaryTemplate.find(getAdm);
+      queryObject = getAdm;
+    } else if (gotRole.role == "stateAdmin") {
+      let getEmp = { empId: empId, state: gotRole.state, role: "Employee" };
+      // let result = salaryTemplate.find(getEmp);
+      queryObject = getEmp;
+    }
+    return queryObject;
+  };
+  // const val  = await User.find({});
+  const vals = access(gotRole, empId);
+  const val = await User.find(vals);
+  console.log(val);
+  res
+    .status(StatusCodes.CREATED)
+    .json({ details: val, totalDetails: val.length, numOfPages: 1 });
+};
+
+const updateUserAdmin = async (req, res) => {
+  const { id: detailsId } = req.params;
+  const details = await User.findOne({ _id: detailsId });
+  if (!details) {
+    throw new NotFoundError(` No EmployeeDetails with id ${detailsId}`);
+  }
+  const updatedDetails = await User.findOneAndUpdate(
+    {
+      _id: detailsId,
+    },
+    req.body,
+    { new: true, runValidators: true }
+  );
+  res.status(StatusCodes.OK).json({
+    updatedDetails,
+  });
+};
+
+const deleteUsersAdmin = async (req, res) => {
+  const { id: detailsId } = req.params;
+  const details = await User.findOne({
+    _id: detailsId,
+  });
+  if (!details) {
+    throw new NotFoundError(`No User with Id ${detailsId}`);
+  }
+  await details.remove();
+  res.status(StatusCodes.OK).json({ msg: "User Deleted" });
+};
+
+//forgot password
+const forgotPassword = async (req, res) => {
+  const { email } = req.body;
+  console.log(email);
+  if (!email) {
+    throw new BadRequestError("Please provide valid email");
+  }
+
+  const user = await User.findOne({ email });
+  console.log(user);
+  if (user) {
+    const passwordToken = crypto.randomBytes(70).toString("hex");
+    // send email
+    // const origin = "http://localhost:3000";
+    // const origin = `${req.protocol}://${req.get(
+    //   "host"
+    // )}/password/reset/${forgotToken}`;
+    const origin = `http://saga.brandimagetech.com/#`;
+    const origins = await sendResetPasswordEmail({
+      name: user.name,
+      email: user.email,
+      token: passwordToken,
+      origin,
+    });
+
+    const tenMinutes = 1000 * 60 * 10;
+    const passwordTokenExpirationDate = new Date(Date.now() + tenMinutes);
+
+    user.passwordToken = createHash(passwordToken);
+    user.passwordTokenExpirationDate = passwordTokenExpirationDate;
+    await user.save();
+  }
+
+  res
+    .status(StatusCodes.OK)
+    .json({ msg: "Please check your email for reset password link" });
+};
+
+//reset password
+const resetPassword = async (req, res) => {
+  const { password, confirmPassword } = req.body;
+  const { email, token } = req.query;
+  const user = await User.findOne({ email });
+    console.log(req.query) 
+    console.log(user)
+
+  if (!user) {
+    throw new BadRequestError("Please provide correct email id");
+  }
+  if (!password || !confirmPassword) {
+    throw new BadRequestError("Please provide same password");
+  }
+
+  if (user) {
+    console.log(user);
+    const currentDate = new Date();
+
+    if (
+      user.passwordToken === createHash(token) &&
+      user.passwordTokenExpirationDate > currentDate
+    ) {
+      user.password = password;
+      user.passwordToken = undefined;
+      user.passwordTokenExpirationDate = undefined;
+      await user.save();
+      res.send("reset password sucessfully");
+    } else {
+      res.send("cannot password reset");
+    }
+  }
+};
+
+export {
+  register,
+  login,
+  verifyEmail,
+  updateUser,
+  getAllUser,
+  updateUserAdmin,
+  deleteUsersAdmin,
+  forgotPassword,
+  resetPassword,
+};

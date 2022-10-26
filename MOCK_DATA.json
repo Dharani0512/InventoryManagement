@@ -1,0 +1,1202 @@
+[
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "2/19/2022",
+    "toDate": "7/3/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-13T07:57:03Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "11/3/2021",
+    "toDate": "7/12/2021",
+    "reason": "sick",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-06-28T08:00:05Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "9/3/2021",
+    "toDate": "11/1/2021",
+    "reason": "marraige",
+    "totalDays": 4,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-07-31T18:48:29Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "12/18/2021",
+    "toDate": "3/18/2022",
+    "reason": "sick",
+    "totalDays": 3,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-25T01:46:03Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "3/6/2022",
+    "toDate": "1/15/2022",
+    "reason": "sick",
+    "totalDays": 8,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-01-23T04:23:47Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "3/2/2022",
+    "toDate": "7/15/2021",
+    "reason": "tour",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-06-04T20:36:11Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "1/22/2022",
+    "toDate": "10/22/2021",
+    "reason": "tour",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-15T05:12:49Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "10/12/2021",
+    "toDate": "12/1/2021",
+    "reason": "sick",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-02-01T19:18:25Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "4/1/2021",
+    "toDate": "7/30/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-09T08:10:45Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "4/26/2021",
+    "toDate": "11/11/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-27T20:06:09Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "7/2/2021",
+    "toDate": "4/24/2021",
+    "reason": "tour",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-12T13:38:20Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "10/18/2021",
+    "toDate": "11/18/2021",
+    "reason": "marraige",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-22T22:04:34Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "12/3/2021",
+    "toDate": "1/3/2022",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-06-13T17:05:38Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "10/17/2021",
+    "toDate": "5/1/2021",
+    "reason": "sick",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-07-21T20:55:56Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "5/28/2021",
+    "toDate": "12/24/2021",
+    "reason": "marraige",
+    "totalDays": 6,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-08T14:42:54Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "4/9/2021",
+    "toDate": "10/17/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-06-01T14:12:36Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "3/3/2022",
+    "toDate": "1/12/2022",
+    "reason": "sick",
+    "totalDays": 3,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-07-19T17:11:43Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "4/7/2021",
+    "toDate": "7/21/2021",
+    "reason": "marraige",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-21T18:53:48Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "11/27/2021",
+    "toDate": "7/24/2021",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-05T14:20:30Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "4/2/2021",
+    "toDate": "3/16/2022",
+    "reason": "tour",
+    "totalDays": 6,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-02-24T21:55:09Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "11/23/2021",
+    "toDate": "4/25/2021",
+    "reason": "tour",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-06-29T23:48:22Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "1/11/2022",
+    "toDate": "2/9/2022",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-02T13:07:58Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "12/7/2021",
+    "toDate": "8/26/2021",
+    "reason": "tour",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-11T08:21:55Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "8/20/2021",
+    "toDate": "5/13/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-03T12:00:31Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "3/26/2022",
+    "toDate": "10/29/2021",
+    "reason": "marraige",
+    "totalDays": 9,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-30T06:47:58Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "12/10/2021",
+    "toDate": "2/10/2022",
+    "reason": "marraige",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-05-06T20:32:06Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "8/7/2021",
+    "toDate": "4/5/2021",
+    "reason": "tour",
+    "totalDays": 6,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-22T02:17:19Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "12/8/2021",
+    "toDate": "8/28/2021",
+    "reason": "tour",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-06T02:12:37Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "6/29/2021",
+    "toDate": "4/14/2021",
+    "reason": "marraige",
+    "totalDays": 4,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-02-15T12:41:23Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "7/24/2021",
+    "toDate": "10/21/2021",
+    "reason": "marraige",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-12T15:10:00Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "11/19/2021",
+    "toDate": "3/14/2022",
+    "reason": "tour",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-01-07T19:49:10Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "9/19/2021",
+    "toDate": "9/9/2021",
+    "reason": "marraige",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-01-14T19:46:47Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "2/5/2022",
+    "toDate": "6/9/2021",
+    "reason": "marraige",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-12-22T17:58:59Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "5/8/2021",
+    "toDate": "1/10/2022",
+    "reason": "marraige",
+    "totalDays": 3,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-30T21:43:38Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "9/2/2021",
+    "toDate": "9/21/2021",
+    "reason": "sick",
+    "totalDays": 6,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-05-30T00:04:53Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "7/3/2021",
+    "toDate": "9/2/2021",
+    "reason": "tour",
+    "totalDays": 9,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-12-15T02:09:30Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "1/3/2022",
+    "toDate": "1/12/2022",
+    "reason": "tour",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-21T22:56:24Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "6/21/2021",
+    "toDate": "3/10/2022",
+    "reason": "sick",
+    "totalDays": 9,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-12-14T17:37:15Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "3/9/2022",
+    "toDate": "9/3/2021",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-08-06T12:23:50Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "5/7/2021",
+    "toDate": "12/2/2021",
+    "reason": "marraige",
+    "totalDays": 9,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-02-04T21:37:27Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "4/3/2021",
+    "toDate": "11/3/2021",
+    "reason": "marraige",
+    "totalDays": 6,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-07-31T11:18:39Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "5/29/2021",
+    "toDate": "7/16/2021",
+    "reason": "sick",
+    "totalDays": 8,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-03T18:09:08Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "5/15/2021",
+    "toDate": "1/4/2022",
+    "reason": "tour",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-08-25T18:41:00Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "5/10/2021",
+    "toDate": "9/11/2021",
+    "reason": "tour",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-01-11T17:38:16Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "11/2/2021",
+    "toDate": "5/30/2021",
+    "reason": "tour",
+    "totalDays": 6,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-13T08:36:09Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "9/7/2021",
+    "toDate": "7/24/2021",
+    "reason": "tour",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-23T17:44:41Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "8/7/2021",
+    "toDate": "7/8/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-15T00:30:33Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "1/7/2022",
+    "toDate": "11/21/2021",
+    "reason": "tour",
+    "totalDays": 9,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-08-20T00:51:58Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "7/5/2021",
+    "toDate": "8/8/2021",
+    "reason": "marraige",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-07-28T16:39:15Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "5/9/2021",
+    "toDate": "12/9/2021",
+    "reason": "marraige",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-07-30T11:08:20Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "3/14/2022",
+    "toDate": "4/21/2021",
+    "reason": "tour",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-10T04:57:55Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "2/4/2022",
+    "toDate": "9/18/2021",
+    "reason": "marraige",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-16T15:27:06Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "2/17/2022",
+    "toDate": "9/12/2021",
+    "reason": "marraige",
+    "totalDays": 9,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-08-17T19:21:32Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "5/7/2021",
+    "toDate": "6/5/2021",
+    "reason": "marraige",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-02-08T10:55:30Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "6/8/2021",
+    "toDate": "11/15/2021",
+    "reason": "marraige",
+    "totalDays": 6,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-05T06:11:03Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "5/21/2021",
+    "toDate": "11/22/2021",
+    "reason": "tour",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-10T10:14:02Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "9/19/2021",
+    "toDate": "6/27/2021",
+    "reason": "tour",
+    "totalDays": 4,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-01-23T00:33:14Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "3/25/2022",
+    "toDate": "12/6/2021",
+    "reason": "sick",
+    "totalDays": 9,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-13T09:39:44Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "5/19/2021",
+    "toDate": "3/10/2022",
+    "reason": "marraige",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-08-22T00:44:28Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "12/30/2021",
+    "toDate": "2/19/2022",
+    "reason": "marraige",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-07-23T21:48:51Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "2/1/2022",
+    "toDate": "12/25/2021",
+    "reason": "tour",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-05T12:31:32Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "1/9/2022",
+    "toDate": "11/13/2021",
+    "reason": "tour",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-07-07T00:41:13Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "4/28/2021",
+    "toDate": "6/27/2021",
+    "reason": "marraige",
+    "totalDays": 8,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-30T17:49:59Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "5/28/2021",
+    "toDate": "2/19/2022",
+    "reason": "sick",
+    "totalDays": 9,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-12-11T05:32:14Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "3/10/2022",
+    "toDate": "10/30/2021",
+    "reason": "tour",
+    "totalDays": 3,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-06-15T15:54:25Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "7/11/2021",
+    "toDate": "8/9/2021",
+    "reason": "marraige",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-05-03T15:30:41Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "9/21/2021",
+    "toDate": "12/16/2021",
+    "reason": "marraige",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-18T11:41:56Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "11/8/2021",
+    "toDate": "9/4/2021",
+    "reason": "sick",
+    "totalDays": 4,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-10T15:38:58Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "8/14/2021",
+    "toDate": "1/10/2022",
+    "reason": "sick",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-05-03T11:29:22Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "12/21/2021",
+    "toDate": "7/2/2021",
+    "reason": "marraige",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-02-07T22:12:43Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "11/10/2021",
+    "toDate": "5/20/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-01-03T11:07:27Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "3/3/2022",
+    "toDate": "3/15/2022",
+    "reason": "tour",
+    "totalDays": 9,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-19T08:31:33Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "7/6/2021",
+    "toDate": "8/2/2021",
+    "reason": "tour",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-05-28T22:12:55Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "2/6/2022",
+    "toDate": "2/13/2022",
+    "reason": "marraige",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-08-12T13:34:39Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "4/17/2021",
+    "toDate": "8/13/2021",
+    "reason": "tour",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-05-27T09:49:23Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "5/25/2021",
+    "toDate": "5/17/2021",
+    "reason": "marraige",
+    "totalDays": 9,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-02-25T02:53:07Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "7/6/2021",
+    "toDate": "6/30/2021",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-06-15T15:50:14Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "10/18/2021",
+    "toDate": "11/17/2021",
+    "reason": "sick",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-03T22:36:34Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "6/2/2021",
+    "toDate": "5/30/2021",
+    "reason": "tour",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-13T11:22:02Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "5/2/2021",
+    "toDate": "6/16/2021",
+    "reason": "sick",
+    "totalDays": 9,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-22T14:07:26Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "5/6/2021",
+    "toDate": "1/4/2022",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-05-07T10:10:30Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "5/11/2021",
+    "toDate": "9/25/2021",
+    "reason": "sick",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-16T16:55:49Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "8/30/2021",
+    "toDate": "2/14/2022",
+    "reason": "marraige",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-08T18:40:27Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "10/24/2021",
+    "toDate": "12/27/2021",
+    "reason": "tour",
+    "totalDays": 6,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-06-11T04:39:12Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "6/8/2021",
+    "toDate": "1/14/2022",
+    "reason": "sick",
+    "totalDays": 6,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-02-08T06:59:20Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "5/29/2021",
+    "toDate": "8/24/2021",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-22T16:51:47Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "4/16/2021",
+    "toDate": "3/14/2022",
+    "reason": "tour",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-01-02T13:30:22Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "9/18/2021",
+    "toDate": "10/4/2021",
+    "reason": "marraige",
+    "totalDays": 4,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-08-24T00:05:39Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "9/6/2021",
+    "toDate": "8/20/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-27T01:24:50Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "10/2/2021",
+    "toDate": "1/11/2022",
+    "reason": "marraige",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-07T11:57:30Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "3/24/2022",
+    "toDate": "4/23/2021",
+    "reason": "sick",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-21T08:03:56Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "6/10/2021",
+    "toDate": "8/28/2021",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-06-25T12:04:51Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "4/21/2021",
+    "toDate": "10/6/2021",
+    "reason": "marraige",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-11T07:46:33Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "9/29/2021",
+    "toDate": "1/10/2022",
+    "reason": "sick",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-26T05:33:41Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "4/24/2021",
+    "toDate": "9/4/2021",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-08-07T05:42:50Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "7/6/2021",
+    "toDate": "2/11/2022",
+    "reason": "tour",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-01-13T11:39:54Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "12/10/2021",
+    "toDate": "9/13/2021",
+    "reason": "marraige",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-16T12:57:52Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "7/11/2021",
+    "toDate": "10/31/2021",
+    "reason": "sick",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-03T13:51:22Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "9/10/2021",
+    "toDate": "8/16/2021",
+    "reason": "sick",
+    "totalDays": 9,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-02-14T20:03:09Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "5/1/2021",
+    "toDate": "5/28/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-23T08:55:07Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "6/4/2021",
+    "toDate": "4/18/2021",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-02-03T09:19:01Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "9/2/2021",
+    "toDate": "11/22/2021",
+    "reason": "tour",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-11T19:06:49Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "11/8/2021",
+    "toDate": "8/28/2021",
+    "reason": "tour",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-23T12:53:44Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "8/15/2021",
+    "toDate": "9/18/2021",
+    "reason": "tour",
+    "totalDays": 9,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-08-05T22:01:43Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "7/26/2021",
+    "toDate": "5/26/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-04-12T17:19:01Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "3/8/2022",
+    "toDate": "11/2/2021",
+    "reason": "sick",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-12T13:30:09Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "6/3/2021",
+    "toDate": "4/1/2021",
+    "reason": "marraige",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-21T23:25:45Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "8/21/2021",
+    "toDate": "7/19/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-01-05T01:36:47Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "10/24/2021",
+    "toDate": "4/30/2021",
+    "reason": "tour",
+    "totalDays": 4,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-12-06T09:58:50Z"
+  },
+  {
+    "leaveType": "Casual Leave",
+    "fromDate": "10/13/2021",
+    "toDate": "10/1/2021",
+    "reason": "sick",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-08-13T18:41:32Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "8/24/2021",
+    "toDate": "11/8/2021",
+    "reason": "tour",
+    "totalDays": 8,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-01-16T05:37:15Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "8/9/2021",
+    "toDate": "6/8/2021",
+    "reason": "marraige",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-17T16:12:32Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "4/20/2021",
+    "toDate": "3/22/2022",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-07T21:49:02Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "5/29/2021",
+    "toDate": "5/3/2021",
+    "reason": "sick",
+    "totalDays": 3,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-06-29T05:58:24Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "4/22/2021",
+    "toDate": "12/23/2021",
+    "reason": "tour",
+    "totalDays": 9,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-05-09T23:28:23Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "2/6/2022",
+    "toDate": "4/11/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-10-10T06:51:25Z"
+  },
+  {
+    "leaveType": "Medical Leave",
+    "fromDate": "10/22/2021",
+    "toDate": "2/19/2022",
+    "reason": "marraige",
+    "totalDays": 8,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-11-05T12:32:06Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "6/28/2021",
+    "toDate": "6/4/2021",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-05-13T08:48:09Z"
+  },
+  {
+    "leaveType": "Maternity Leave",
+    "fromDate": "9/17/2021",
+    "toDate": "6/18/2021",
+    "reason": "sick",
+    "totalDays": 2,
+    "status": "declined",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2022-03-01T19:20:10Z"
+  },
+  {
+    "leaveType": "Earned Leave",
+    "fromDate": "7/1/2021",
+    "toDate": "2/1/2022",
+    "reason": "sick",
+    "totalDays": 1,
+    "status": "pending",
+    "createdBy": "623d920e2be77941ff29377c",
+    "createdAt": "2021-09-26T07:44:02Z"
+  }
+]

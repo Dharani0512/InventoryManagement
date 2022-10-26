@@ -1,0 +1,14 @@
+
+  // const findProject = await projects.findOne({ _id: projectId });
+
+  // if (!findProject) {
+  //   throw new NotFoundError("No Project with the given id ");
+  // }
+  // const adminId = req.user.userId;
+  // const findAdmin = await User.findOne({ adminId });
+
+  // const userRole = findAdmin.role;
+
+  // if (userRole !== "Admin") {
+  //   throw new BadRequestError("You are not allowed to delete the Projects");
+  // }

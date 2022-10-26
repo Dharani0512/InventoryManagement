@@ -1,0 +1,228 @@
+[{
+  "_id": {
+    "$oid": "62c547591d96f8df06e1dffb"
+  },
+  "name": "rajesh",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffb"
+  },
+  "email": "rajesh@gmail.com",
+  "employeeId": "AD10001",
+  "password": "$2a$10$LaNliBLWjble.o4ejA9llOzHOYvOuv75dIiSNgdkv2oNIuS9Y1Riu",
+  "role": "Admin",
+  "verificationToken": "514de3fd9c548d068f4e948dbeee4ba601fa4c8771f8f576afbbbb8708a4911b28e8cb7fe20c6d06",
+  "isVerified": false,
+  "__v": 0,
+  "empId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  }
+},{
+  "_id": {
+    "$oid": "630857f4c6b705df860ed9e5"
+  },
+  "name": "ganesh",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "ganesh@gmail.com",
+  "employeeId": "AD10002",
+  "password": "$2a$10$TGisWY2ngpX8FEXVTw8L7Ot2z.IKdzBdl100QT1IaYTsMEfat28sS",
+  "role": "stateAdmin",
+  "state": "tamilnadu",
+  "verificationToken": "58568f3335480cfbb802c71f397b81412832112a9db85d243ef499758eed17a6569cfdc7500c6fd7",
+  "isVerified": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63085830da01c6fd8b9bdb87"
+  },
+  "name": "krishna",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "krishna@gmail.com",
+  "employeeId": "002",
+  "password": "$2a$10$gYFpQvJw87qjfzaunEo3Oumxn1JKiquulxE.wfzOCGzyDOF0GkAYO",
+  "role": "Employee",
+  "state": "tamilnadu",
+  "verificationToken": "79a09a867c6f8ab4e4f029362f446fdafe3d7046d3ed3d83681ba15cb8f680c063651acd65592771",
+  "isVerified": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63085843da01c6fd8b9bdb90"
+  },
+  "name": "murugan",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "murugan@gmail.com",
+  "employeeId": "003",
+  "password": "$2a$10$03xPEpd240CbT4fubhNvOugz6p1NCVfQZFYf8S61/aNLdpBemYwIa",
+  "role": "Employee",
+  "state": "tamilnadu",
+  "verificationToken": "dca90d2ce25d9b0e1cc3e36e1f569cef0e126f5e24ab9c4e866badba47088f81880a2ecfe1e6ffbb",
+  "isVerified": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63085859da01c6fd8b9bdb96"
+  },
+  "name": "Rajesh kumar. V",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "rajeshkumar@gmail.com",
+  "employeeId": "004",
+  "password": "$2a$10$c/JZWDUL81mKVHsbuvewxOf2tUB7ACXRSDU4IM6DqN6e8yHjsupnG",
+  "role": "Employee",
+  "state": "tamilnadu",
+  "verificationToken": "8a4c14ec6bbc44d31c1ad62f33a378e02e43333e6c8868531583cddb69718e358bdd422c28d0202f",
+  "isVerified": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63085864c6b705df860ed9eb"
+  },
+  "name": "selva kumar",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "selvakumar@gmail.com",
+  "employeeId": "001",
+  "password": "$2a$10$b1EWhRe/CO2szMtKTHyy.uxovUtrfC.8wiFMwllXxmYTOtrSuNDaG",
+  "role": "Employee",
+  "state": "tamilnadu",
+  "verificationToken": "a3cfde83781e94ec855caae641ed183569982ff9d0cde79fc97dc39994b5bd903783dbfad3b2ba8e",
+  "isVerified": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6308586fda01c6fd8b9bdb9c"
+  },
+  "name": "M. Ajith",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "ajith@gmail.com",
+  "employeeId": "005",
+  "password": "$2a$10$L01JMSs.pams9viuwoQr2OWAaz3x3TUlEDYJM7TGn1912W9Ca/206",
+  "role": "Employee",
+  "state": "tamilnadu",
+  "verificationToken": "ece5311f70f4ef5390f2120b20dc50bd6803063a10c2d5418aad0c648a5ec036888591b615a13646",
+  "isVerified": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63085887da01c6fd8b9bdba2"
+  },
+  "name": "Mithun kishore.R",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "mithunkishore@gmail.com",
+  "employeeId": "006",
+  "password": "$2a$10$O2UNEEie6bNV9eI8V2ZJieONW/UB1eJJYYgRXc0s38BfscCY8PbwK",
+  "role": "Employee",
+  "state": "tamilnadu",
+  "verificationToken": "35167f01d82b09b7ae8dc5a172bcff78d2d3d25491ad1965b53f75f7aa2d81a76288d4d4bdaaeaf9",
+  "isVerified": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630858b1da01c6fd8b9bdba8"
+  },
+  "name": "J. Meginth Joslan",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "meginthjoslan@gmail.com",
+  "employeeId": "007",
+  "password": "$2a$10$57Ytxv3oOd6nxPL2wItGzOCCL3kD5DyrxrllmMA.hsP/KDo5zsK92",
+  "role": "Employee",
+  "state": "tamilnadu",
+  "verificationToken": "fd6dcb4fcd7381f127b78f01ef872baf2cf41c43e178383fe7da2cc125f37d4d79a4cb32f31e309f",
+  "isVerified": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630858d3da01c6fd8b9bdbb1"
+  },
+  "name": "Prasanna. A.S",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "prasanna@gmail.com",
+  "employeeId": "008",
+  "password": "$2a$10$IA6kEf8xjBd79zK7mXWNUOyPtJ/GnpOzBETLWFGgXkbHvSNa8.A9q",
+  "role": "Employee",
+  "state": "tamilnadu",
+  "verificationToken": "43aa70cfe74febcc41b8f02f926e0006d19d01480eb428c86b48013d275cd04c6e1c084e5da43132",
+  "isVerified": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630858ebda01c6fd8b9bdbb7"
+  },
+  "name": "Mr.Saranraj",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "saranraj@gmail.com",
+  "employeeId": "009",
+  "password": "$2a$10$C6TcaBwvIGwNgBw1JN7E8OB/hk6Owv4ZvC0h6xAG4mm6Q70fnYJwm",
+  "role": "Employee",
+  "state": "tamilnadu",
+  "verificationToken": "23e99eb6f783808c462f46e97ef24b109c15363164cd3a81953d593de891a0bdaf063148be8fbbd9",
+  "isVerified": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63085903da01c6fd8b9bdbbd"
+  },
+  "name": "Ms.Mary priyanka",
+  "adminId": {
+    "$oid": "62c547591d96f8df06e1dffa"
+  },
+  "empId": {
+    "$oid": "630857f4c6b705df860ed9e4"
+  },
+  "email": "marypriyanka@gmail.com",
+  "employeeId": "010",
+  "password": "$2a$10$Tz3CDkNMuza1KXfk1SBcVOms8LgwKJsdSI/9frdp6CWgwFBD1XB26",
+  "role": "Employee",
+  "state": "tamilnadu",
+  "verificationToken": "9efd70ec91f77894532e1f94b41a4909c8a98e247b51dbb679f8543cdcb005fd192547505181b025",
+  "isVerified": false,
+  "__v": 0
+}]

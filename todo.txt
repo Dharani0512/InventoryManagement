@@ -1,0 +1,615 @@
+seperate the admin and employee
+style the leave => almost done \
+
+
+for dynamic routing get idea from signupmodal 
+
+<Wrapper>
+        <h1>Punch Time</h1>
+        {showAlert && <Alert />}
+
+        <FormRow labelText="Remarks" />
+        {login ? (
+          <button
+            className="btn"
+            onClick={() => {
+              setLogin(!login);
+              editPending(
+                // details.length === 0
+                // ? details[details.length]._id
+                details[30]._id,
+
+                "logoutAttendance",
+                logoutState,
+                "Logged out successfully"
+              );
+            }}
+            // onSubmit={() => {
+            //   // return displayAlert();
+            // }}
+          >
+            Punch Out
+          </button>
+        ) : (
+          <button
+            className="btn"
+            onClick={() => {
+              setLogin(!login);
+              createDepartment(
+                "loginAttendance",
+                states,
+                "Logged in successfully"
+              );
+            }}
+          >
+            Punch In
+          </button>
+        )}
+        <div></div>
+      </Wrapper>
+
+  // const logoutId = JSON.stringify(details[details.length - 1]._id);
+  // console.log(JSON.stringify(details[details.length - 1]._id));
+  // const logout = details[details.length - 1];
+
+
+  <Grid
+          style={
+            {
+              // maxHeight: "4000px",
+              // maxWidth: "4000px",
+            }
+          }
+          data={details}
+        >
+          {/* <h1> {details.attendanceEmail}as </h1> */}
+          {/* <Column field="attendanceEmail" title="ID" width="1000px" />
+          <Column field="attendanceName" title="Name" width="250px" />
+          <Column field="attendanceType" title="CategoryName" />
+          <Column field="loginTime" title="Price" width="80px" />
+          <Column field="logoutTime" title="In stock" width="80px" /> */}
+        </Grid>
+
+
+
+mar 21 app.js
+
+import React from "react";
+import styled from "styled-components";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Register, Error, ProtectedRoute, Landing } from "./pages";
+import {
+  AttendanceDetails,
+  DepartmentDetails,
+  EmployeeDetails,
+  LeaveDetails,
+  PerformanceDetails,
+  SalaryDetails,
+  AdminDashboard,
+  TrainingDetails,
+  SharedLayout,
+  DisplayPerformance,
+} from "./pages/adminDashboard";
+import {
+  Attendance,
+  Dashboard,
+  LeaveApplication,
+  Salary,
+  Traning,
+} from "./pages/employeeDashboard";
+import {
+  AddJob,
+  AllJobs,
+  Profile,
+  Stats,
+  SharedLayout2,
+} from "./pages/tutorial";
+import { EmployeeForm, DepartmentForm } from "./components/index.js";
+import PersonalDetails from "./pages/employeeDashboard/PersonalDetails";
+import PersonalDetailsForm from "./components/PersonalDetailsForm";
+import SalaryForm from "./form/salaryForm";
+import LeaveForm from "./form/LeaveForm";
+import LeaveApplicationDetails from "./pages/employeeDashboard/LeaveApplicationDetails";
+import DailyAttedance from "./pages/employeeDashboard/DailyAttedance";
+import CalendarAttendance from "./pages/employeeDashboard/CalanderAttendance";
+import AttendanceCalendar from "./pages/employeeDashboard/AttendanceCalendar";
+import AllLeaves from "./pages/adminDashboard/AllLeaves";
+import DailyAttendance2 from "./pages/employeeDashboard/DailyAttendance2";
+import PerformanceDetails2 from "./pages/employeeDashboard/PerformanceDetails";
+import Clock from "./components/Clock";
+import PdfButton from "./components/PdfButton";
+
+const Button = styled.button`
+  background: red;
+  color: white;
+  font-size: 1rem;
+`;
+
+function App() {
+  return (
+    <Router>
+      {/* <nav>
+        <Link to="/">Dashboard</Link>
+        <Link to="/register">Register</Link>
+        <Link to="/landing">Landing</Link>
+      </nav> */}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <SharedLayout2 />
+            </ProtectedRoute>
+          }
+        >
+          <Route index element={<AdminDashboard />} />
+
+          <Route path="employeeDetails" element={<EmployeeDetails />}></Route>
+          <Route path="employeeForm" element={<EmployeeForm />}></Route>
+          <Route path="departmentForm" element={<DepartmentForm />}></Route>
+          <Route
+            path="departmentDetails"
+            element={<DepartmentDetails />}
+          ></Route>
+          <Route path="salaryForm" element={<SalaryForm />}></Route>
+          <Route path="salaryDetails" element={<SalaryDetails />}></Route>
+          <Route
+            path="AttendanceDetails"
+            element={<AttendanceDetails />}
+          ></Route>
+          <Route path="leaveDetails" element={<LeaveDetails />}></Route>
+
+          <Route path="dailyAttendance" element={<DailyAttedance />}></Route>
+          <Route
+            path="attendanceDetails"
+            element={<AttendanceDetails />}
+          ></Route>
+          <Route path="calendar" element={<CalendarAttendance />}></Route>
+          <Route
+            path="attendanceCalendar"
+            element={<AttendanceCalendar />}
+          ></Route>
+          <Route path="departmentDetails" element={<DepartmentDetails />} />
+          <Route path="performanceDetails" element={<PerformanceDetails />} />
+          <Route path="performanceDetails2" element={<PdfButton />} />
+          <Route path="displayPerformance" element={<DisplayPerformance />} />
+        </Route>
+
+        {/* employee route  */}
+
+        <Route
+          path="/employee"
+          element={
+            <ProtectedRoute>
+              <SharedLayout2 />
+            </ProtectedRoute>
+          }
+        >
+          <Route index element={<Dashboard />} />
+
+          <Route
+            path="leaveApplicationDetails"
+            element={<LeaveApplicationDetails />}
+          ></Route>
+          <Route
+            path="personalDetailsForm"
+            element={<PersonalDetailsForm />}
+          ></Route>
+          <Route path="personalDetails" element={<PersonalDetails />}></Route>
+          <Route path="dailyAttendance" element={<DailyAttedance />}></Route>
+          <Route path="leaveForm" element={<LeaveForm />}></Route>
+          <Route path="dailyAttendance2" element={<Clock />}></Route>
+          <Route path="leaveDetails" element={<AllLeaves />}></Route>
+          <Route path="leaveForm" element={<LeaveForm />}></Route>
+        </Route>
+
+        <Route path="/register" element={<Register />} />
+        <Route path="/landing" element={<Landing />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
+{
+  /* <Route path="all-jobs" element={<AllJobs />}></Route>
+          <Route path="all-leaves" element={<AllLeaves />}></Route>
+          <Route path="add-job" element={<AddJob />}></Route>
+          <Route path="profile" element={<Profile />}></Route> */
+}
+
+
+
+<Wrapper>
+        <form className="form">
+          <h4>Search Form</h4>
+          <form className="form-center">
+            <FormRow
+              type="text"
+              labelText="Search Employee"
+              name="search"
+              value={search}
+              handleChange={handleSearch}
+            ></FormRow>
+            <FormRow
+              type="text"
+              name="employeeDetailsId"
+              value={employeeDetailsId}
+              handleChange={handleSearch}
+            />
+            <FormRowSelect
+              name="sort"
+              value={sort}
+              handleChange={handleSearch}
+              list={sortOptions}
+            />
+            <button
+              className="btn btn-block btn-danger"
+              disabled={isLoading}
+              onClick={handleSubmit}
+            >
+              clear filters
+            </button>
+          </form>
+        </form>
+      </Wrapper>
+
+      ?search=${search}&sort=${sort}&employeeDetailsId=${employeeDetailsId}
+
+
+       "scripts": {
+    "build-client": "cd client && npm run build",
+    "start": "react-scripts start",
+    // "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"k
+  },
+
+
+  hQFd6VNK3ZB5wur
+
+  4475gGYyEdPgiKY
+
+
+  ycs7usr3vt8w
+
+  import React, { useRef, useEffect } from "react";
+import Wrapper from "../../assets/wrappers/EmpSingleDetial";
+import { useAppcontext } from "../../context/appContext";
+import { TiEdit } from "react-icons/ti";
+import { FaTrashAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { HiOutlineDownload } from "react-icons/hi";
+import Loading from "../../components/Loading";
+import RazorPay from "../RazorPay";
+import ReactToPrint from "react-to-print";
+const TableData = [
+  "Employee Id",
+  "Employee Name",
+  "accountNumber",
+  "bankName",
+  "ifscCode",
+  "basicSalary",
+  "hra",
+  "conveyance",
+  "grossSalary",
+  "deductions",
+  "addition",
+  "Take Home",
+  "Salary Status",
+];
+const SalaryDetails = () => {
+  const componentRef = useRef();
+  const {
+    page,
+    sort,
+    salaryStatus,
+    details,
+    getDepartment,
+    isLoading,
+    deleteDetail,
+    setEditDepartment,
+    totalDetails,
+  } = useAppcontext();
+  console.log(details);
+  const id = localStorage.getItem("user");
+  const empId = JSON.parse(id)._id;
+  useEffect(() => {
+    getDepartment(`/salaryDetail/${empId}`);
+  }, []);
+  if (isLoading) {
+    return <Loading center />;
+  }
+  if (details.length === 0) {
+    <Wrapper>
+      <h2>No employee details to display</h2>
+    </Wrapper>;
+  }
+  // accountNumber: 52345345
+  // ​​
+  // bankName: "fsgfdg"
+  // ​​
+  // basic: "fsdgsdf"
+  // ​​
+  // basicSalary: 10000
+  // ​​
+  // branch: "sfdgfg"
+  // ​​
+  // category: "gsdfgsdfg"
+  // ​​
+  // conveyance: 4532
+  // ​​
+  // createdAt: "2022-06-15T10:57:34.096Z"
+  // ​​
+  // createdBy: "62a81e5c3dae6d19d574f065"
+  // ​​
+  // createdFor: "62a81cc27805c6656ad96eff"
+  // ​​
+  // date_of_join: "sdfgfsdgdsf"
+  // ​​
+  // department: "dsfgfsdgsdfg"
+  // ​​
+  // designation: "gsfdgsd"
+  // ​​
+  // division: "sgdfg"
+  // ​​
+  // diwaliBonus: 0
+  // ​​
+  // email: "madhanrajesh.bits@gmail.com"
+  // ​​
+  // empCode: "fsdgfdsg"
+  // ​​
+  // employeeId: 10001
+  // ​​
+  // esi: 1.2
+  // ​​
+  // grade: "fgsdfg"
+  // ​​
+  // gratuity: 0
+  // ​​
+  // hra: 3234321
+  // ​​
+  // ifscCode: "452342345"
+  // ​​
+  // incomeTax: 0
+  // ​​
+  // leaveDeduction: 549
+  // ​​
+  // lta: 0
+  // ​​
+  // medicalAllowance: 0
+  // ​​
+  // name: "madhan"
+  // ​​
+  // paymentSuccess: 0
+  // ​​
+  // pf: 1.2
+  // ​​
+  // pfNo: "dsfgfdsgsdfg"
+  // ​​
+  // professionalTax: 99
+  // salaryStatus: "pending"
+  // ​​
+  // updatedAt: "2022-06-20T06:19:19.429Z"
+  console.log(details);
+
+  return (
+    <Wrapper>
+      <table>
+        <tr>
+          <th>details</th>
+          <th>Amount</th>
+        </tr>
+        {details.map((item, index) => {
+          const {
+            accountNumber,
+            bankName,
+            basic,
+            basicSalary,
+            branch,
+            category,
+            conveyance,
+            date_of_join,
+            department,
+            designation,
+            division,
+            diwaliBonus,
+            email,
+            empCode,
+            employeeId,
+            esi,
+            grade,
+            gratuity,
+            hra,
+            ifscCode,
+            incomeTax,
+            leaveDeduction,
+            name,
+            lta,
+            medicalAllowance,
+            paymentSuccess,
+            pf,
+            pfNo,
+            professionalTax,
+            salaryStatus,
+          } = item;
+          return (
+            <>
+              <tr>
+                <td>Employee Id</td>
+                <td>{employeeId} </td>
+              </tr>
+              <tr>
+                <td>Name</td>
+                <td>{name}</td>
+              </tr>
+              <tr>
+                <td>Account Number </td>
+                <td>{accountNumber}</td>
+              </tr>
+              <tr>
+                <td>Bank Name</td>
+                <td>{bankName}</td>
+              </tr>
+              <tr>
+                <td>IFSC Code</td>
+                <td>{ifscCode}</td>
+              </tr>
+              <tr>
+                <td>Basic Salary</td>
+                <td>{basicSalary}</td>
+              </tr>
+              <tr>
+                <td>HRA</td>
+                <td>{hra}</td>
+              </tr>
+              <tr>
+                <td>Conveyance</td>
+                <td>{conveyance}</td>
+              </tr>
+              <tr>
+                <td>Gross Salary</td>
+                <td>10000</td>
+              </tr>
+              <tr>
+                <td>Deduction</td>
+                <tr>
+                  <td>ds</td>
+                </tr>
+              </tr>
+            </>
+          );
+        })}
+      </table>
+    </Wrapper>
+  );
+};
+
+export default SalaryDetails;
+
+Requirements
+//loginAttendance
+front end data format must be as default date 
+
+//july 18
+Employee details roles finished
+authorizepermission updated 
+authcontrollers --need to create a front end as per req.body register,
+createdFor.js middleware -- req.body.state need to create in frontend 
+
+//july 19
+departmentDetails -- req.body create a workingLocation, state on  department details,
+departmentDetails roles finished
+ "state": "karnataka",
+ "workingArea":"bangalore"
+
+ Register: stateAdmin can create a admin user:
+ To mitigate: in frontend , remove admin and stateAdmin for stateAdmin register,
+ stateAdmin user can only add employees.  
+
+//july 20
+personalDetails - checking, create a Workingstate in model, createdFor middleware is important req.body.state;
+personalDetails - finished;
+leaveDetails finished
+leave approval : add role in body leaveDetails frontend "Employee"
+
+//july 21
+leave approval : finished
+login Attendance - putAttendance add req.body - state, role, workingLocation
+get all attendance la attendanceDetails model la data field la front end la data kudukanum
+
+//jul 22
+TODO
+    working on employee attendance:
+    todo admin attendanceDetails;
+    salary template
+    performanceDetails
+    alluser
+
+
+
+     const getAllPerformanceMonthlyWise = async (req, res) => {
+    const allPerformance = await performance.aggregate([
+      {
+        $group: {
+          _id: { $month: "$createdAt" },
+          count: { $sum: 1 },
+        },
+      },
+      {
+        $project: {
+          total: {
+            $sum: [
+              "$behaviour",
+              "$compliance",
+              "$grasping",
+              "$initiative",
+              "$jobKnowledge",
+              "$proactiveness",
+              "$targetAchivement",
+              "$teamManagement",
+              "$newBusiness",
+              "$leadership",
+              "$regularWork",
+            ],
+          },
+        },
+      },
+    ]);
+    console.log("performance count", allPerformance);
+  };
+
+source  --> localsystem.
+ip  --> unmanaged server..
+storage -> ssh username password.
+
+unmanaged
+ftp: server
+domain name: username , password for that web
+
+left side: localsystem 
+
+
+right side: connection filezilla
+ip, username, password, port, -> connect 
+
+
+hosting -> godaddy
+buy server 
+
+experience: 
+  
+
+source to target -> copy
+
+
+Request URL: https://brandimagetech.com/
+Request Method: GET
+Status Code: 200 
+Remote Address: 184.168.100.170:443
+
+GET /HTTP/1.1
+host: www.brandimagetech.com
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,
+accept-language: en-US,en;q=0.9,ta;q=0.8
+
+
+git init .
+git remote add origin https://....(github link)
+git add .
+git commit -m " initial commit "
+git push origin master
+
+after re pull
+git add .
+git commit -m ".."
+git push origin master
+
+
+//server
+cd goto directory
+git pull origin master
+ 
+

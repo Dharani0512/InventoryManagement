@@ -1,0 +1,76 @@
+.table {
+  display: grid;
+  /* height: 100vh; */
+
+  margin: 2rem 0rem;
+
+  /* justify-content: center; */
+}
+.sticky-col {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  box-shadow: 0px 0.1px 5px gray;
+}
+
+.first-col {
+  /* box-shadow: 0 1px 1px gray; */
+  width: 100px;
+  min-width: auto;
+  max-width: auto;
+  left: 0px;
+}
+.second-col {
+  width: 15px;
+  min-width: 150px;
+  max-width: 150px;
+  left: 100px;
+}
+
+.table-container {
+  overflow: auto;
+}
+
+.table-body {
+  border-collapse: collapse;
+  text-align: left;
+  box-shadow: 0 5px 10px gray;
+  overflow-x: auto;
+}
+thead {
+  /* box-shadow: 0 5px 10px gray; */
+}
+th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+/* for changing head color css on 25
+ */
+thead tr {
+  background-color: rgb(162, 169, 200);
+}
+
+td {
+  box-shadow: 0 1px 2px gray;
+  padding: 1rem 2rem;
+}
+table td {
+  overflow: hidden;
+
+  white-space: nowrap;
+}
+
+/* tr:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+} */
+
+tr:hover {
+  background-color: rgb(199, 199, 199);
+  transition: 250ms;
+}
+th:hover {
+  background-color: #fff;
+}
